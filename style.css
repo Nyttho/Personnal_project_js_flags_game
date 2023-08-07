@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to right, #c2e59c, #64b3f4);
+}
+h1 {
+    text-align: center;
+}
+
+.flag{
+    display: flex;
+    justify-content: center;
+   
+}
+
+.flag img{
+    width: 128px;
+    
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    width: 700px;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.choices button {
+    min-width: 300px;
+    padding: 1rem
+}
+
+p{
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 1rem;
+}
