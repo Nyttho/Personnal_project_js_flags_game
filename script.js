@@ -244,6 +244,7 @@ const span = document.querySelector(".pourcentage");
 span.textContent = pourcentageBonnesReponses + "%"
 let flag;
 let gameOver = false;
+let array = [];
 generateGame();
 
 function generateGame(){
@@ -251,6 +252,19 @@ function generateGame(){
  goodAnswerIndex = Math.floor(Math.random()*flags.length);
  goodAnswer = flags[goodAnswerIndex];
 
+ if(!array.includes(goodAnswerIndex)){
+
+ array.push(goodAnswerIndex);
+ }else {
+   generateGame();
+ }
+
+if(array.length === flags.length){
+    gameOver = true;
+    msg.textContent = "Vous avez fait le tour de tout les drapeaux"
+}
+
+console.log(array);
 
 //création de la liste des réponses
 let choices = [goodAnswer];
@@ -266,7 +280,7 @@ while(choices.length < 4){
     }
 }
 // on mélange la liste de réponses (fisher yates shuffle)
-copy = [];
+let copy = [];
 function shuffle(array) {
     let n = array.length, i;
   
@@ -300,6 +314,7 @@ for(element of copy){
     choicesContainer.appendChild(btn);
 
 }
+
 
 const allResponses = document.querySelectorAll("button");
 
@@ -349,6 +364,8 @@ function askAnotherGame() {
     
 
     replayButton.addEventListener("click", restartGame);
+
+    
 
     
 }
