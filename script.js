@@ -179,7 +179,7 @@ let flags = [
     ["SA","Arabie Saouite"],
     ["SB","Îles Salomon"],
     ["SC","Seychelles"],
-    ["S","Soudan"],
+    ["SD","Soudan"],
     ["SE","Suède"],
     ["SG","Singapour"],
     ["SH","Sainte-Hélène"],
