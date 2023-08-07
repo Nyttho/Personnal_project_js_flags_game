@@ -251,17 +251,17 @@ function generateGame(){
 //on génère aléatoirement le drapeau et la bonne réponse
  goodAnswerIndex = Math.floor(Math.random()*flags.length);
  goodAnswer = flags[goodAnswerIndex];
+// permet d'éviter de tomber 2 fois sur le même drapeau
+while (array.includes(goodAnswerIndex)) {
+    goodAnswerIndex = Math.floor(Math.random() * flags.length);
+    goodAnswer = flags[goodAnswerIndex];
+}
 
- if(!array.includes(goodAnswerIndex)){
-
- array.push(goodAnswerIndex);
- }else {
-   generateGame();
- }
-
+array.push(goodAnswerIndex);
+// une fois tout les drapeaux sortis le jeu s'arrête
 if(array.length === flags.length){
     gameOver = true;
-    msg.textContent = "Vous avez fait le tour de tout les drapeaux"
+    msg.textContent = "Vous avez fait le tour de tous les drapeaux"
 }
 
 console.log(array);
