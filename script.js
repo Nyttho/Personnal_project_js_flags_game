@@ -77,7 +77,7 @@ let flags = [
     ["GG","Guernesey"],
     ["GH","Ghana"],
     ["GI","Gibraltar"],
-    ["GR","Groenland"],
+    ["GL","Groenland"],
     ["GM","Gambie"],
     ["GN","Guinée"],
     ["GQ","Guinée équatoriale"],
