@@ -158,7 +158,7 @@ let flags = [
     ["NZ","Nouvelle Zélande"],
     ["OM","Oman"],
     ["PA","Panama"],
-    ["PE","Péru"],
+    ["PE","Pérou"],
     ["PF","Polynésie Françaises"],
     ["PG","Papouasie Nouvelle Guinée"],
     ["PH","Philippines"],
